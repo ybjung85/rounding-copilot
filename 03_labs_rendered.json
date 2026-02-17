@@ -1,0 +1,355 @@
+{
+    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.6",
+    "speak": "Lab trends card",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "🔬 정윤빈 — Laboratory Trends",
+                            "weight": "Bolder",
+                            "size": "Medium",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "MRN 7443817 | 146W 54:01 | HOD #4 | POD #2",
+                            "isSubtle": true,
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Latest Key Labs (2026-02-18 05:58)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "WBC", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "6.76", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Hb", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "9.6", "weight": "Bolder", "horizontalAlignment": "Center", "color": "Accent" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "PLT", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "218", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "CRP", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "23.3", "weight": "Bolder", "horizontalAlignment": "Center", "color": "Attention" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Cr", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "0.83", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "CBC Trend (5 days)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": " " }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-14", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-15", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-16", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-17", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-18", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "WBC", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "7.20", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "6.90", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "6.80", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "6.70", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "6.76", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "PMN%", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "68.0", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "72.0", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "75.0", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "76.0", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "76.9", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "Hb", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "10.4", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "10.1", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "9.9", "size": "Small", "horizontalAlignment": "Center", "color": "Accent" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "9.7", "size": "Small", "horizontalAlignment": "Center", "color": "Accent" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "9.6", "size": "Small", "horizontalAlignment": "Center", "color": "Accent" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "Hct", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "31.0", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "30.2", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "29.4", "size": "Small", "horizontalAlignment": "Center", "color": "Accent" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "28.5", "size": "Small", "horizontalAlignment": "Center", "color": "Accent" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "27.6", "size": "Small", "horizontalAlignment": "Center", "color": "Accent" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "PLT", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "240", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "232", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "225", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "220", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "218", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Chemistry Trend (5 days)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": " " }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-14", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-15", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-16", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-17", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-18", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "BUN", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "18.5", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "19.8", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "20.9", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "21.3", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "Cr", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "0.82", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "0.80", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "0.79", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "0.83", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "AST", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "24", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "20", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "19", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "ALT", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "12", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "8", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "7", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "T-bil", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "0.6", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "0.4", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "0.4", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Electrolyte Trend (5 days)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": " " }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-14", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-15", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-16", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-17", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-18", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "Na", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "137", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "136", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "135", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "136", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "K", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "4.1", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "3.9", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "3.7", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "3.8", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "Cl", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "103", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "105", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "107", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "104", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "accent",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "CRP Trend (5 days)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": " " }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-14", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-15", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-16", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-17", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "02-18", "weight": "Bolder", "size": "Small", "horizontalAlignment": "Center" }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "50px", "items": [{ "type": "TextBlock", "text": "CRP", "weight": "Bolder", "size": "Small" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "18.2", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "21.8", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "-", "size": "Small", "horizontalAlignment": "Center" }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "23.3", "size": "Small", "horizontalAlignment": "Center", "color": "Attention" }] }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "spacing": "Medium",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "← Back to Summary",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "summary",
+                        "mrn": "7443817"
+                    }
+                }
+            ]
+        }
+    ]
+}
