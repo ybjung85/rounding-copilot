@@ -1,0 +1,344 @@
+{
+    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.6",
+    "speak": "Patient summary card",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "정윤빈 (M/41)",
+                            "weight": "Bolder",
+                            "size": "Medium",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "MRN 7443817 | 146W 54:01",
+                            "spacing": "None",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "verticalContentAlignment": "Center",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "HOD #4 | POD #2",
+                            "weight": "Bolder",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Dx: Acute cholecystitis",
+            "spacing": "Small",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Op: Laparoscopic cholecystectomy (2026-02-15)",
+            "isSubtle": true,
+            "spacing": "None",
+            "wrap": true
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "accent",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🤖 AI Clinical Insight",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Active Problems:**\n• Postoperative fever\n• Anemia (Hb trending down)",
+                    "wrap": true,
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Risk Alerts:**\n• Sepsis risk: Moderate\n• Hypotension episodes overnight",
+                    "wrap": true,
+                    "spacing": "Small"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Today's Priorities:**\n• Repeat CBC/CRP today\n• Maintain IV fluids\n• Encourage early ambulation",
+                    "wrap": true,
+                    "spacing": "Small"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "📋 Latest Vitals (2026-02-17 03:12)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "BP", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "90/58", "weight": "Bolder", "horizontalAlignment": "Center", "color": "Accent" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "PR", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "75", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "BT", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "37.5°C", "weight": "Bolder", "horizontalAlignment": "Center", "color": "Attention" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "RR", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "20", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "SpO₂", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "98%", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "💧 Fluid Balance (2026-02-16)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Intake", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "2700cc", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Output", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "2650cc", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Net", "isSubtle": true, "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "+50cc", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "🩹 Drains (Latest)",
+                    "weight": "Bolder",
+                    "separator": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "L-tube 800cc, H/V1 200cc, H/V2 220cc",
+                    "wrap": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🔬 Latest Labs (2026-02-18 05:58)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "WBC", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "6.76", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Hb", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "9.6", "weight": "Bolder", "horizontalAlignment": "Center", "color": "Accent" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "PLT", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "218", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "CRP", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "23.3", "weight": "Bolder", "horizontalAlignment": "Center", "color": "Attention" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Small",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "BUN", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "21.3", "weight": "Bolder", "horizontalAlignment": "Center", "color": "Attention" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Cr", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "0.83", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "Na", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "136", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "K", "isSubtle": true, "size": "Small", "horizontalAlignment": "Center", "spacing": "None" },
+                                { "type": "TextBlock", "text": "3.8", "weight": "Bolder", "horizontalAlignment": "Center" }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "style": "accent",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🚨 Last 24h Events",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "• Fever spike to 38.5℃ at 02:30\n• Hypotension episode (SBP 88 mmHg)\n• PRBC transfusion (1 unit)",
+                    "wrap": true,
+                    "separator": true,
+                    "spacing": "Small"
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "spacing": "Medium",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "📊 Vitals & Fluid Trend",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "snapshot",
+                        "mrn": "7443817"
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "🔬 Lab Trends",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "labs",
+                        "mrn": "7443817"
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "📝 Events & Orders",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "events",
+                        "mrn": "7443817"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+  "patient": {
+    "name": "정윤빈",
+    "sex": "M",
+    "age": 41,
+    "mrn": "7443817",
+    "ward": "146",
+    "room": "54",
+    "bed": "01",
+    "pod": 2,
+    "hod": 4,
+    "mainDiagnosis": "Acute cholecystitis",
+    "operationName": "Laparoscopic cholecystectomy",
+    "operationDate": "2026-02-15"
+  },
+
+  "aiInsight": {
+    "activeProblemsText": "• Postoperative fever\n• Anemia (Hb trending down)",
+    "riskAlertsText": "• Sepsis risk: Moderate\n• Hypotension episodes overnight",
+    "prioritiesText": "• Repeat CBC/CRP today\n• Maintain IV fluids\n• Encourage early ambulation"
+  },
+
+  "snapshot": {
+    "vitalsLatest": {
+      "measuredAt": "2026-02-17 03:12",
+      "BP":   { "value": "90/58",  "status": "low" },
+      "PR":   { "value": "75",     "status": "normal" },
+      "BT":   { "value": "37.5",   "status": "high" },
+      "RR":   { "value": "20",     "status": "normal" },
+      "SpO2": { "value": "98",     "status": "normal" }
+    },
+    "fluidLatest": {
+      "date": "2026-02-16",
+      "intake": "2700",
+      "output": "2650",
+      "net": "+50"
+    },
+    "drainsLatestSummary": "L-tube 800cc, H/V1 200cc, H/V2 220cc"
+  },
+
+  "snapshotMatrix": {
+    "vitals": {
+      "t1": "02-16\n03:50",
+      "t2": "02-16\n05:25",
+      "t3": "02-16\n07:30",
+      "t4": "02-16\n10:30",
+      "t5": "02-16\n10:45",
+      "t6": "02-17\n03:12",
+      "BP":   { "t1": "96/51", "t2": "88/53", "t3": "89/50", "t4": "92/54", "t5": "87/56", "t6": "90/58" },
+      "PR":   { "t1": "83",    "t2": "81",    "t3": "79",    "t4": "72",    "t5": "78",    "t6": "75" },
+      "BT":   { "t1": "37.4",  "t2": "37.8",  "t3": "37.7",  "t4": "36.9",  "t5": "-",     "t6": "37.5" },
+      "RR":   { "t1": "16",    "t2": "20",    "t3": "16",    "t4": "18",    "t5": "18",    "t6": "20" },
+      "SpO2": { "t1": "96",    "t2": "96",    "t3": "-",     "t4": "99",    "t5": "-",     "t6": "98" }
+    },
+    "fluid": {
+      "d1": "02-14",
+      "d2": "02-15",
+      "d3": "02-16",
+      "intake":  { "d1": "2850", "d2": "2600", "d3": "2700" },
+      "output":  { "d1": "3100", "d2": "2450", "d3": "2650" },
+      "net":     { "d1": "-250", "d2": "+150", "d3": "+50" },
+      "drains": {
+        "L_tube": { "d1": "1200", "d2": "1100", "d3": "800" },
+        "HV_1":   { "d1": "300",  "d2": "250",  "d3": "200" },
+        "HV_2":   { "d1": "180",  "d2": "250",  "d3": "220" }
+      }
+    }
+  },
+
+  "events24h": "• Fever spike to 38.5℃ at 02:30\n• Hypotension episode (SBP 88 mmHg)\n• PRBC transfusion (1 unit)",
+
+  "labs": {
+    "latestAt": "2026-02-18 05:58",
+    "key": {
+      "WBC": { "value": "6.76", "status": "normal" },
+      "PMN": { "value": "76.9", "status": "high" },
+      "Hb":  { "value": "9.6",  "status": "low" },
+      "Hct": { "value": "27.6", "status": "low" },
+      "PLT": { "value": "218",  "status": "normal" },
+      "CRP": { "value": "23.3", "status": "high" },
+      "BUN": { "value": "21.3", "status": "high" },
+      "Cr":  { "value": "0.83", "status": "normal" },
+      "Na":  { "value": "136",  "status": "normal" },
+      "K":   { "value": "3.8",  "status": "normal" },
+      "Cl":  { "value": "104",  "status": "normal" }
+    }
+  },
+
+  "labsMatrix": {
+    "dates": {
+      "d1": "02-14",
+      "d2": "02-15",
+      "d3": "02-16",
+      "d4": "02-17",
+      "d5": "02-18"
+    },
+    "cbc": {
+      "WBC":         { "d1": "7.20", "d2": "6.90", "d3": "6.80", "d4": "6.70", "d5": "6.76" },
+      "PMN_percent": { "d1": "68.0", "d2": "72.0", "d3": "75.0", "d4": "76.0", "d5": "76.9" },
+      "Hb":          { "d1": "10.4", "d2": "10.1", "d3": "9.9",  "d4": "9.7",  "d5": "9.6" },
+      "Hct":         { "d1": "31.0", "d2": "30.2", "d3": "29.4", "d4": "28.5", "d5": "27.6" },
+      "PLT":         { "d1": "240",  "d2": "232",  "d3": "225",  "d4": "220",  "d5": "218" }
+    },
+    "chemistry": {
+      "BUN":  { "d1": "18.5", "d2": "19.8", "d3": "-", "d4": "20.9", "d5": "21.3" },
+      "Cr":   { "d1": "0.82", "d2": "0.80", "d3": "-", "d4": "0.79", "d5": "0.83" },
+      "AST":  { "d1": "-",    "d2": "24",   "d3": "-", "d4": "20",   "d5": "19" },
+      "ALT":  { "d1": "-",    "d2": "12",   "d3": "-", "d4": "8",    "d5": "7" },
+      "Tbil": { "d1": "-",    "d2": "0.6",  "d3": "-", "d4": "0.4",  "d5": "0.4" }
+    },
+    "electrolyte": {
+      "Na": { "d1": "137", "d2": "136", "d3": "135", "d4": "-", "d5": "136" },
+      "K":  { "d1": "4.1", "d2": "3.9", "d3": "3.7", "d4": "-", "d5": "3.8" },
+      "Cl": { "d1": "103", "d2": "105", "d3": "107", "d4": "-", "d5": "104" }
+    },
+    "inflammation": {
+      "CRP": { "d1": "18.2", "d2": "-", "d3": "21.8", "d4": "-", "d5": "23.3" }
+    }
+  },
+
+  "imaging": "CT Abdomen (2026-02-16): No abscess. Mild postoperative fluid collection.",
+  "medications": "• Piperacillin/Tazobactam IV q8h\n• PCA morphine\n• Enoxaparin 40mg SC daily",
+
+  "emrUrl": "https://examplehospital.com/emr/7443817"
+}

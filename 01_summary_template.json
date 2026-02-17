@@ -1,0 +1,528 @@
+{
+    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.6",
+    "speak": "Patient summary card",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${patient.name} (${patient.sex}/${patient.age})",
+                            "weight": "Bolder",
+                            "size": "Medium",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "MRN ${patient.mrn} | ${patient.ward}W ${patient.room}:${patient.bed}",
+                            "spacing": "None",
+                            "isSubtle": true,
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "verticalContentAlignment": "Center",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "HOD #${patient.hod} | POD #${patient.pod}",
+                            "weight": "Bolder",
+                            "color": "Accent",
+                            "size": "Medium",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Dx: ${patient.mainDiagnosis}",
+            "spacing": "Small",
+            "wrap": true,
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Op: ${patient.operationName} (${patient.operationDate})",
+            "isSubtle": true,
+            "spacing": "None",
+            "wrap": true
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "accent",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🤖 AI Clinical Insight",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Active Problems:**\n${aiInsight.activeProblemsText}",
+                    "wrap": true,
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Risk Alerts:**\n${aiInsight.riskAlertsText}",
+                    "wrap": true,
+                    "spacing": "Small"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Today's Priorities:**\n${aiInsight.prioritiesText}",
+                    "wrap": true,
+                    "spacing": "Small"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "📋 Latest Vitals (${snapshot.vitalsLatest.measuredAt})",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "BP",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.vitalsLatest.BP.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "PR",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.vitalsLatest.PR.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "BT",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.vitalsLatest.BT.value}°C",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "RR",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.vitalsLatest.RR.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "SpO₂",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.vitalsLatest.SpO2.value}%",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        }
+                    ],
+                    "separator": true
+                }
+            ],
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "💧 Fluid Balance (${snapshot.fluidLatest.date})",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Intake",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.fluidLatest.intake}cc",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Output",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.fluidLatest.output}cc",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Net",
+                                    "isSubtle": true,
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${snapshot.fluidLatest.net}cc",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        }
+                    ],
+                    "separator": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "🩹 Drains (Latest)",
+                    "weight": "Bolder",
+                    "separator": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${snapshot.drainsLatestSummary}",
+                    "wrap": true
+                }
+            ],
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🔬 Latest Labs (${labs.latestAt})",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "WBC",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.WBC.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Hb",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.Hb.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "PLT",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.PLT.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "CRP",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.CRP.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        }
+                    ],
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Small",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "BUN",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.BUN.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Cr",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.Cr.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Na",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.Na.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "K",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${labs.key.K.value}",
+                                    "weight": "Bolder",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "style": "emphasis",
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "spacing": "Small",
+            "style": "accent",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🚨 Last 24h Events",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${events24h}",
+                    "wrap": true,
+                    "separator": true,
+                    "spacing": "Small"
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "spacing": "Medium",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "📊 Vitals & Fluid Trend",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "snapshot",
+                        "mrn": "${patient.mrn}"
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "🔬 Lab Trends",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "labs",
+                        "mrn": "${patient.mrn}"
+                    }
+                },
+                {
+                    "type": "Action.Submit",
+                    "title": "📝 Events & Orders",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "events",
+                        "mrn": "${patient.mrn}"
+                    }
+                }
+            ]
+        }
+    ]
+}
