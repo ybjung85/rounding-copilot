@@ -119,7 +119,5 @@
   },
 
   "imaging": "CT Abdomen (2026-02-16): No abscess. Mild postoperative fluid collection.",
-  "medications": "• Piperacillin/Tazobactam IV q8h\n• PCA morphine\n• Enoxaparin 40mg SC daily",
-
-  "emrUrl": "https://examplehospital.com/emr/7443817"
+  "medications": "• Piperacillin/Tazobactam IV q8h\n• PCA morphine\n• Enoxaparin 40mg SC daily"
 }
