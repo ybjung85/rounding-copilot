@@ -1,0 +1,235 @@
+{
+    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.6",
+    "speak": "Events and orders card",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "📝 정윤빈 — Events & Orders",
+                            "weight": "Bolder",
+                            "size": "Medium",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "MRN 7443817 | 146W 54:01 | HOD #4 | POD #2",
+                            "isSubtle": true,
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "accent",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🚨 Last 24h Events",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "• Fever spike to 38.5℃ at 02:30\n• Hypotension episode (SBP 88 mmHg)\n• PRBC transfusion (1 unit)\n• IV fluid rate increased to 120cc/hr\n• Foley catheter removed",
+                    "wrap": true,
+                    "separator": true,
+                    "spacing": "Small"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "💊 Active Medications",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Antibiotics**",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Piperacillin/Tazobactam", "size": "Small", "wrap": true }] },
+                        { "type": "Column", "width": "auto", "items": [{ "type": "TextBlock", "text": "4.5g IV q8h", "size": "Small", "isSubtle": true }] }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Analgesics**",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Morphine (PCA)", "size": "Small", "wrap": true }] },
+                        { "type": "Column", "width": "auto", "items": [{ "type": "TextBlock", "text": "1mg bolus, 6min lockout", "size": "Small", "isSubtle": true }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Acetaminophen", "size": "Small", "wrap": true }] },
+                        { "type": "Column", "width": "auto", "items": [{ "type": "TextBlock", "text": "1g IV q6h PRN", "size": "Small", "isSubtle": true, "color": "Warning" }] }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Anticoagulants**",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Enoxaparin", "size": "Small", "wrap": true }] },
+                        { "type": "Column", "width": "auto", "items": [{ "type": "TextBlock", "text": "40mg SC daily", "size": "Small", "isSubtle": true }] }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**GI Prophylaxis**",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Pantoprazole", "size": "Small", "wrap": true }] },
+                        { "type": "Column", "width": "auto", "items": [{ "type": "TextBlock", "text": "40mg IV daily", "size": "Small", "isSubtle": true }] }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Antiemetics**",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Ondansetron", "size": "Small", "wrap": true }] },
+                        { "type": "Column", "width": "auto", "items": [{ "type": "TextBlock", "text": "4mg IV q8h PRN", "size": "Small", "isSubtle": true, "color": "Warning" }] }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "🖼️ Imaging Results",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**CT Abdomen** (2026-02-16)",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "No abscess. Mild postoperative fluid collection in the gallbladder fossa. No biliary dilatation.",
+                    "wrap": true,
+                    "size": "Small"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Chest X-ray** (2026-02-17)",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "No active lung lesion. No pleural effusion. L-tube tip in proper position.",
+                    "wrap": true,
+                    "size": "Small"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "Medium",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "📋 Recent Nursing Notes (Last 24h)",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "80px", "items": [{ "type": "TextBlock", "text": "02-17 02:30", "size": "Small", "isSubtle": true }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Fever 38.5℃, blood culture collected, cooling blanket applied", "size": "Small", "wrap": true }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "80px", "items": [{ "type": "TextBlock", "text": "02-17 03:00", "size": "Small", "isSubtle": true }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "SBP dropped to 88, NS bolus 500cc given, BP recovered to 95/62", "size": "Small", "wrap": true }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "80px", "items": [{ "type": "TextBlock", "text": "02-17 06:00", "size": "Small", "isSubtle": true }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "PRBC 1 unit transfusion started, no transfusion reaction noted", "size": "Small", "wrap": true }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "80px", "items": [{ "type": "TextBlock", "text": "02-17 10:00", "size": "Small", "isSubtle": true }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Ambulation with assist, tolerated well, mild incisional pain (NRS 4)", "size": "Small", "wrap": true }] }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        { "type": "Column", "width": "auto", "minWidth": "80px", "items": [{ "type": "TextBlock", "text": "02-17 14:00", "size": "Small", "isSubtle": true }] },
+                        { "type": "Column", "width": "stretch", "items": [{ "type": "TextBlock", "text": "Foley catheter removed, voided 250cc clear urine spontaneously", "size": "Small", "wrap": true }] }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ActionSet",
+            "spacing": "Medium",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "← Back to Summary",
+                    "data": {
+                        "action": "showDetail",
+                        "card": "summary",
+                        "mrn": "7443817"
+                    }
+                }
+            ]
+        }
+    ]
+}
