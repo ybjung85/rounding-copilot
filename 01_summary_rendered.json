@@ -70,22 +70,127 @@
                 },
                 {
                     "type": "TextBlock",
-                    "text": "**Active Problems:**\n• Postoperative fever\n• Anemia (Hb trending down)",
-                    "wrap": true,
+                    "text": "**Active Problems**",
+                    "weight": "Bolder",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Small",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                { "type": "TextBlock", "text": "🔴", "spacing": "None" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "수술 후 출혈 의심", "weight": "Bolder", "color": "Attention", "spacing": "None" },
+                                { "type": "TextBlock", "text": "Hb 13.2→11.8→9.6 | JP drain 450cc/8hr | PR 112", "size": "Small", "isSubtle": true, "wrap": true, "spacing": "None" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Small",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                { "type": "TextBlock", "text": "🟡", "spacing": "None" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "수술 부위 감염 가능성", "weight": "Bolder", "color": "Warning", "spacing": "None" },
+                                { "type": "TextBlock", "text": "BT 38.5℃ | CRP 23.3↑ | WBC 6.76 (정상)", "size": "Small", "isSubtle": true, "wrap": true, "spacing": "None" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Risk Alerts**",
+                    "weight": "Bolder",
+                    "spacing": "Small",
+                    "separator": true
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Small",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                { "type": "TextBlock", "text": "🔴", "spacing": "None" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "수혈 필요 가능성", "weight": "Bolder", "color": "Attention", "spacing": "None" },
+                                { "type": "TextBlock", "text": "Hb 9.6 (POD#2), 24hr 내 2.2 하락", "size": "Small", "isSubtle": true, "wrap": true, "spacing": "None" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "spacing": "Small",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                { "type": "TextBlock", "text": "🟡", "spacing": "None" }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                { "type": "TextBlock", "text": "저혈압 반복", "weight": "Bolder", "color": "Warning", "spacing": "None" },
+                                { "type": "TextBlock", "text": "SBP 88~92 (야간 2회) | 수액 반응 양호", "size": "Small", "isSubtle": true, "wrap": true, "spacing": "None" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "**Today's Priorities**",
+                    "weight": "Bolder",
                     "spacing": "Small",
                     "separator": true
                 },
                 {
                     "type": "TextBlock",
-                    "text": "**Risk Alerts:**\n• Sepsis risk: Moderate\n• Hypotension episodes overnight",
+                    "text": "1. CBC f/u 및 수혈 준비 ← Hb 지속 하락",
                     "wrap": true,
-                    "spacing": "Small"
+                    "spacing": "Small",
+                    "weight": "Bolder"
                 },
                 {
                     "type": "TextBlock",
-                    "text": "**Today's Priorities:**\n• Repeat CBC/CRP today\n• Maintain IV fluids\n• Encourage early ambulation",
+                    "text": "2. 혈액배양 시행 ← 발열 원인 감별",
                     "wrap": true,
-                    "spacing": "Small"
+                    "spacing": "None"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "3. 수액 속도 재평가 ← 저혈압 반복, I/O 확인",
+                    "wrap": true,
+                    "spacing": "None"
                 }
             ]
         },
